@@ -23,6 +23,8 @@
 ## Recommended
 
 * https://github.com/dgryski/go-perfbook
+* https://en.algorithmica.org/hpc/
+* https://www.dataorienteddesign.com/dodbook/
 * https://www.computerenhance.com/
 
 ## Tools
