@@ -63,3 +63,30 @@ func BenchmarkHalf(b *testing.B) {
 		DiffLimit(half, 50)
 	}
 }
+
+//go:noinline
+func DiffLimitCMOV(vs []int, limit int) int {
+	above := 0
+	below := 0
+	for _, v := range vs {
+		if v > limit {
+			above += v
+		}
+		if v < limit {
+			below += v
+		}
+	}
+	return above - below
+}
+
+func BenchmarkUnsortedCMOV(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		DiffLimitCMOV(unsorted, 50)
+	}
+}
+
+func BenchmarkSortedCMOV(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		DiffLimitCMOV(sorted, 50)
+	}
+}

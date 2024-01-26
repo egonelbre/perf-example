@@ -11,6 +11,7 @@ var sorted []*float32
 var unsorted []*float32
 
 func init() {
+	// data = make([]float32, 100000)
 	data = make([]float32, 10000000)
 	for i := range data {
 		data[i] = rand.Float32()

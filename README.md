@@ -13,6 +13,7 @@
 * [bounds check cost](./bounds_checks)
 * [unrolling](./unrolling)
 * [loop alignment](./loop_alignment)
+* heap vs stack allocation
 
 ## Additional Videos / Articles
 
