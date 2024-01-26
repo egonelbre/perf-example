@@ -25,8 +25,11 @@
 * https://github.com/dgryski/go-perfbook
 * https://www.computerenhance.com/
 
-## Additional Tools
+## Tools
 
+* Benchmark statistical analysis (https://golang.org/x/perf/cmd/benchstat)
+* Assembly and Code viewer (https://github.com/loov/lensm)
+* Visualizing bounds checks (https://github.com/loov/view-annotated-file)
 * AMD μProf (https://www.amd.com/en/developer/uprof.html)
 * Intel VTune Profiler (https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html)
 * Apple Instruments (https://help.apple.com/instruments/mac/current/#)

@@ -26,6 +26,7 @@ func BenchmarkTimeAlternative(b *testing.B) {
 // Using https://pkg.go.dev/golang.org/x/perf/cmd/benchstat
 //
 //	go test -bench Sub -count 10 | tee bench.log
+//	go install golang.org/x/perf/cmd/benchstat@latest
 //	benchstat bench.log
 //	benchstat old.log new.log
 //	benchstat -col /impl -row .name bench.log
